@@ -1,7 +1,7 @@
 from flask import Flask
 import uvicorn
 
-app=Flask()
+app=Flask(__name__)
 
 @app.get("/")
 def greet():
